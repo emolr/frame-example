@@ -6,11 +6,12 @@
   "scripts": {
     "start": "node node_modules/@framejs/cli/bin/frame start -o -i readme.md",
     "build": "node node_modules/@framejs/cli/bin/frame build -i readme.md",
+    "publish": "node node_modules/@framejs/cli/bin/frame build -i readme.md && node node_modules/@framejs/cli/bin/frame publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@framejs/cli": "^0.2.0"
+    "@framejs/cli": "^0.2.2"
   }
 }

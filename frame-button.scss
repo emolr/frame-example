@@ -1,0 +1,23 @@
+:host {
+  display: inline-block;
+  button {
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: sans-serif;
+    min-width: 80px;
+    padding: 8px 16px;
+    color: var(--button-color, #2a2a2a);
+    background: var(--button-bg, #fff);
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0 0px 16px rgba(0, 0, 0, 0);
+    &:focus {
+      outline: none;
+      background: var(--button-hover-bg, #f0f0f0);
+    }
+    &:hover {
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
