@@ -470,9 +470,21 @@ custom-element-demo {
     <body class="demo-page">
         <article>
             <h1 id="frame-example">Frame Example</h1>
-<p>This is an example demo of a button to show how framejs works.</p>
+<p>This is an example demo of a button to show how framejs works.
+<a href="https://emolr.github.io/frame-example/">Demo</a></p>
 <h2 id="installation">Installation</h2>
-<pre><code class="lang-sh">$ git clone _THIS_REPO_
+<p><em>Just serves as example, it’s not actually on npm</em></p>
+<pre><code class="lang-sh">$ npm install frame-example --save
+</code></pre>
+<h3 id="use-bundled-es6">Use bundled es6</h3>
+<pre><code class="lang-html">&lt;script src=&quot;node_modules/frame-example/frame-button.bundle.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h3 id="use-vanilla-es6">Use vanilla es6</h3>
+<pre><code class="lang-html">&lt;script type=&quot;module&quot; src=&quot;node_modules/frame-example/frame-button.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h3 id="use-with-module-bundling-eg-webpack-og-angular-cli">Use with module bundling eg. webpack og angular cli</h3>
+<p><em>Make sure this code runs before usage</em></p>
+<pre><code class="lang-javascript">  @import &#39;frame-example&#39;;
 </code></pre>
 <h2 id="usage">Usage</h2>
 
@@ -499,7 +511,7 @@ custom-element-demo {
 <li>Submit a pull request :D</li>
 </ol>
 <h2 id="history">History</h2>
-<p>Quite recent</p>
+<p>This component only serves as an example component, and is not available on npm.</p>
 <h2 id="credits">Credits</h2>
 <p>All my friends</p>
 <h2 id="license">License</h2>
