@@ -20,7 +20,7 @@ $ npm install frame-example --save
 <script type="module" src="node_modules/frame-example/frame-button.js"></script>
 ```
 
-### Use with module bundling eg. webpack og angular cli
+### Use with module bundling eg. webpack and angular cli
 _Make sure this code runs before usage_
 
 ```javascript
@@ -61,4 +61,4 @@ All my friends
 
 ## License
 
-See LICENCE
+MIT Licence
