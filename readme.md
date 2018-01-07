@@ -4,9 +4,27 @@ This is an example demo of a button to show how framejs works.
 [Demo](https://emolr.github.io/frame-example/)
 
 ## Installation
+_Just serves as example, it's not actually on npm_
 
 ```sh
-$ git clone _THIS_REPO_
+$ npm install frame-example --save
+```
+
+### Use bundled es6
+```html
+<script src="node_modules/frame-example/frame-button.bundle.js"></script>
+```
+
+### Use vanilla es6
+```html
+<script type="module" src="node_modules/frame-example/frame-button.js"></script>
+```
+
+### Use with module bundling eg. webpack og angular cli
+_Make sure this code runs before usage_
+
+```javascript
+  @import 'frame-example';
 ```
 
 ## Usage
@@ -35,7 +53,7 @@ $ git clone _THIS_REPO_
 
 ## History
 
-Quite recent
+This component only serves as an example component, and is not available on npm.
 
 ## Credits
 
