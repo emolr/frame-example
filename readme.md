@@ -1,7 +1,7 @@
 # Frame Example
 
 This is an example demo of a button to show how framejs works.
-[Demo](https://github.com/emolr/frame-example)
+[Demo](https://emolr.github.io/frame-example/)
 
 ## Installation
 
