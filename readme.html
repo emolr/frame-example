@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Component</title>
+        <title>Frame Example</title>
         <base target="_blank"/>
         <style>
             :root {
@@ -469,22 +469,41 @@ custom-element-demo {
     </head>
     <body class="demo-page">
         <article>
-            <h1 id="component">Component</h1>
+            <h1 id="frame-example">Frame Example</h1>
+<p>This is an example demo of a button to show how framejs works.</p>
+<h2 id="installation">Installation</h2>
+<pre><code class="lang-sh">$ git clone _THIS_REPO_
+</code></pre>
+<h2 id="usage">Usage</h2>
 
             
-<custom-element-demo>
+<custom-element-demo height="100px">
   <template>
-    <script src="component.bundle.js"></script>
-    <my-component></my-component>
+    <script src="frame-button.bundle.js"></script>
+    <frame-button onclick="alert('Button clicked')">Button</frame-button>
 
   </template>
 </custom-element-demo>
 
             <pre>
-                <code class="lang-html">&lt;my-component&gt;&lt;/my-component&gt;
+                <code class="lang-html">&lt;frame-button onclick=&quot;alert(&#39;Button clicked&#39;)&quot;&gt;Button&lt;/frame-button&gt;
 </code>
             </pre>
             
+<h2 id="contributing">Contributing</h2>
+<ol>
+<li>Fork it!</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code></li>
+<li>Commit your changes: <code>git commit -am &#39;Add some feature&#39;</code></li>
+<li>Push to the branch: <code>git push origin my-new-feature</code></li>
+<li>Submit a pull request :D</li>
+</ol>
+<h2 id="history">History</h2>
+<p>Quite recent</p>
+<h2 id="credits">Credits</h2>
+<p>All my friends</p>
+<h2 id="license">License</h2>
+<p>See LICENCE</p>
 
         </article>
         <script>
