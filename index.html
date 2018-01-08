@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Frame Example</title>
+        <title>Frame Button</title>
         <base target="_blank"/>
         <style>
             :root {
@@ -28,286 +28,122 @@ body, html {
   min-height: 100%;
   margin: 0;
   padding: 0;
+  font-size: 15px;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #0c0c0d;
 }
 
-.app {
-  height: 100%;
-  width: 100%;
-  position: fixed;
+a, a:visited {
+  color: #0052CC;
 }
 
-.app__layout {
-  width: 100%;
-  height: 100%;
-  position: relative;
+a:hover {
+  color: #0065FF;
+  text-decoration: underline;
 }
 
-.app__layout__sidebar-toggle {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  display: block;
-  z-index: 99;
-}
-
-@media all and (min-width: 800px) {
-  .app__layout__sidebar-toggle {
-    display: none;
-  }
-}
-
-.app__layout__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #000;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  pointer-events: none;
-}
-
-.app__layout__sidebar {
-  position: absolute;
-  width: 240px;
-  height: 100%;
-  padding: 32px;
-  overflow: auto;
-  z-index: 10;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  background: #fff;
-  z-index: 20;
-}
-
-@media all and (min-width: 800px) {
-  .app__layout__sidebar {
-    -webkit-box-shadow: 0 4px 16px rgba(12, 12, 13, 0.1);
-            box-shadow: 0 4px 16px rgba(12, 12, 13, 0.1);
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-.app__layout__content {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.app__layout__content__frame {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-@media all and (min-width: 800px) {
-  .app__layout__content__frame {
-    width: calc(100% - 240px);
-    -webkit-transform: translateX(240px);
-            transform: translateX(240px);
-  }
-}
-
-.app__layout[sidebar-open] .app__layout__sidebar {
-  -webkit-box-shadow: 0 4px 16px rgba(12, 12, 13, 0.1);
-          box-shadow: 0 4px 16px rgba(12, 12, 13, 0.1);
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.app__layout[sidebar-open] .app__layout__sidebar-toggle {
-  display: none;
-}
-
-.app__layout[sidebar-open] .app__layout__overlay {
-  opacity: .4;
-  pointer-events: initial;
-}
-
-.demo-page {
-  padding: 48px 0;
-  margin: 0 auto;
-}
-
-.sidebar-nav h2 {
-  font-size: 15px;
-  font-weight: 600;
-  margin: 0;
-  padding: 8px 0;
-}
-
-.sidebar-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-.sidebar-nav ul li {
-  list-style-type: none;
-}
-
-.sidebar-nav ul li a {
-  display: block;
-  padding: 8px 0;
-  color: inherit;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.sidebar-nav ul li a:hover {
-  color: #0060df;
-}
-
-.sidebar-nav ul li a.sidebar-nav__is-active {
-  color: #0060df;
-}
-
-.sidebar-nav__title {
-  display: block;
-  font-size: 17px;
-  margin-bottom: 24px;
-  text-decoration: none;
-  color: inherit;
+h1 {
+  font-size: 28px;
   font-weight: 600;
 }
 
-.sidebar-nav__nested ul > li > a {
-  padding-left: 16px;
+h1 + p {
+  font-size: 16px;
+  margin-top: 12px;
+  padding-bottom: 12px;
 }
 
-article {
-  color: var(--grey-90, #000);
-}
-
-article * + custom-element-demo {
-  margin-top: 62px;
-}
-
-article a, article a:visited {
-  color: #0060df;
-}
-
-article h1 {
-  font-size: 33px;
-  font-weight: 200;
-  margin: 0 auto 2rem;
-  max-width: 800px;
-  padding: 0 16px;
-}
-
-article h2 {
+h2 {
   font-size: 22px;
-  font-weight: 300;
-  margin: 3rem auto 1rem;
-  max-width: 800px;
-  padding: 0 16px;
+  font-weight: 600;
 }
 
-article h3 {
-  font-size: 17px;
-  font-weight: 500;
-  margin: 2rem auto 1rem;
-  max-width: 800px;
-  padding: 0 16px;
+h3 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-article h4 {
-  font-size: 13px;
-  font-weight: 500;
-  max-width: 800px;
-  margin: 2rem auto 1rem;
-  padding: 0 16px;
+h4 {
+  font-size: 16px;
+  font-weight: 600;
 }
 
-article p {
+h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+p {
   font-size: 15px;
   font-weight: 400;
-  max-width: 800px;
-  margin: 0 auto 1rem;
-  padding: 0 16px;
   line-height: 1.5;
 }
 
-article p small {
+p small {
   font-size: 13px;
   font-weight: 400;
-  max-width: 800px;
-  margin: 0 auto 1rem;
-  padding: 0 16px;
 }
 
-article figure {
-  max-width: 800px;
-  margin: 0 auto 1rem;
-}
-
-article figcaption {
+figcaption {
   font-size: 13px;
   font-weight: 400;
-  max-width: 800px;
 }
 
-article blockquote {
-  max-width: 800px;
-  margin: 0 auto 1rem;
-  color: var(--grey-50, #aaa);
-  padding: 0 16px;
+blockquote {
+  color: #737373;
 }
 
-article blockquote p {
-  border-left: 2px solid var(--grey-50, #aaa);
+blockquote p {
+  border-left: 2px #737373;
   padding: 0 0 0 16px;
   margin: 0;
 }
 
-article img {
+img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-article ul, article ol {
-  max-width: 800px;
+ul, ol {
   padding: 0 16px 1rem 48px;
   margin: 0 auto;
 }
 
-article ul li, article ol li {
+ul li, ol li {
   line-height: 1.6;
 }
 
-article ul li ul, article ul li ol, article ol li ul, article ol li ol {
+ul li ul, ul li ol, ol li ul, ol li ol {
   padding-left: 18px;
 }
 
-article hr {
+hr {
   border: none;
-  border-bottom: 1px solid var(--grey-30, #bbb);
-  max-width: 768px;
-  margin: 2rem auto;
+  border-bottom: 2px solid #EBECF0;
+  margin: 32px auto;
 }
 
-article hr + * {
+hr + * {
   margin-top: 0;
 }
 
-article code {
-  font-family: "Source Code Pro", monospace;
+code {
+  font-family: "SFMono-Medium", "SF Mono", "Segoe UI Mono", "Roboto Mono", "Ubuntu Mono", Menlo, Courier, monospace;
 }
 
-article pre {
-  max-width: 800px;
+pre {
+  width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+  line-height: 0;
 }
 
-article pre code, article .hljs {
+pre code, .hljs {
   font-weight: 500;
   display: block;
   overflow-x: auto;
@@ -322,144 +158,206 @@ article pre code, article .hljs {
   display: block;
   white-space: pre-wrap;
   margin: 0;
-  padding: 16px 24px;
+  padding: 16px 32px;
   border-radius: 4px;
-  background: var(--gray-10, #fafafa);
+  background: #f4f5f7;
 }
 
-article :not(pre) > * > code,
-article :not(pre) > code {
-  background-color: rgba(220, 220, 220, 0.5);
-  border-radius: 2px;
-  padding: 0 2px;
+:not(pre) > * > code,
+:not(pre) > code {
+  background: #F4F5F7;
+  border-radius: 3px;
+  color: #5E6C84;
+  display: inline-block;
+  padding: 0 0.2em;
 }
 
-article table {
-  max-width: 768px;
-  margin: 0 auto;
-  display: block;
+table {
+  display: table;
   width: 100%;
   overflow: auto;
+  border-collapse: collapse;
+  line-height: 1.5;
 }
 
-article table thead {
+table thead {
   text-align: left;
 }
 
-article table thead th {
-  font-size: 13px;
-  font-weight: 500;
+table thead th {
   text-transform: uppercase;
-  padding: 8px 16px 8px 0;
+  padding: 4px 16px 4px 0;
   vertical-align: top;
+  font-size: .8em;
+  font-weight: 400;
 }
 
-article table thead th:last-of-type {
+table thead th:last-of-type {
   padding-right: 0;
 }
 
-article table tbody td {
-  padding: 8px 16px 8px 0;
+table thead th:empty {
+  display: none;
+}
+
+table tbody td {
+  padding: 4px 16px 4px 0;
   vertical-align: top;
 }
 
-article table tbody td:last-of-type {
+table tbody td:last-of-type {
   padding-right: 0;
 }
 
-article iframe {
-  border: none;
-  width: 100%;
+custom-element-demo {
+  border: 4px solid #f4f5f7;
+  border-radius: 3px;
 }
 
-article .hljs-section,
-article .hljs > ::-moz-selection {
+custom-element-demo + pre {
+  margin-top: -4px;
+}
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+form,
+table,
+custom-element-demo {
+  margin: 12px 0 0 0;
+}
+
+p + custom-element-demo,
+ul + custom-element-demo,
+ol + custom-element-demo,
+dl + custom-element-demo,
+blockquote + custom-element-demo,
+pre + custom-element-demo,
+form + custom-element-demo,
+table + custom-element-demo,
+custom-element-demo + custom-element-demo {
+  margin-top: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 32px 0 0 0;
+}
+
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+blockquote:first-child,
+pre:first-child,
+form:first-child,
+table:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.demo-layout {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.hljs-section,
+.hljs > ::-moz-selection {
   background-color: #d6edea;
 }
 
-article .hljs-section,
-article .hljs > ::selection {
+.hljs-section,
+.hljs > ::selection {
   background-color: #d6edea;
 }
 
-article .hljs-comment {
+.hljs-comment {
   color: #b0bec5;
   font-style: italic;
 }
 
-article .hljs-meta,
-article .hljs-regexp,
-article .hljs-selector-tag,
-article .hljs-tag {
+.hljs-meta,
+.hljs-regexp,
+.hljs-selector-tag,
+.hljs-tag {
   color: #9c27b0;
 }
 
-article .hljs-string,
-article .hljs-subst {
+.hljs-string,
+.hljs-subst {
   color: #0d904f;
 }
 
-article .hljs-number,
-article .hljs-template-variable,
-article .hljs-variable {
+.hljs-number,
+.hljs-template-variable,
+.hljs-variable {
   color: #80cbc4;
 }
 
-article .hljs-attribute,
-article .hljs-keyword,
-article .hljs-name,
-article .hljs-type {
+.hljs-attribute,
+.hljs-keyword,
+.hljs-name,
+.hljs-type {
   color: #3b78e7;
 }
 
-article .hljs-built_in,
-article .hljs-builtin-name,
-article .hljs-bullet,
-article .hljs-function > .hljs-title,
-article .hljs-link,
-article .hljs-symbol,
-article .hljs-title {
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-bullet,
+.hljs-function > .hljs-title,
+.hljs-link,
+.hljs-symbol,
+.hljs-title {
   color: #6182b8;
 }
 
-article .hljs-params {
+.hljs-params {
   color: #d81b60;
 }
 
-article .hljs-addition {
+.hljs-addition {
   color: #3b78e7;
 }
 
-article .hljs-addition,
-article .hljs-deletion {
+.hljs-addition,
+.hljs-deletion {
   display: inline-block;
   width: 100%;
 }
 
-article .hljs-deletion {
+.hljs-deletion {
   color: #e53935;
 }
 
-article .hljs-selector-class,
-article .hljs-selector-id {
+.hljs-selector-class,
+.hljs-selector-id {
   color: #8796b0;
 }
 
-article .hljs-emphasis {
+.hljs-emphasis {
   font-style: italic;
 }
 
-article .hljs-strong {
+.hljs-strong {
   font-weight: 700;
 }
 
-article .hljs-link {
+.hljs-link {
   text-decoration: underline;
-}
-
-custom-element-demo {
-  margin: 0 auto 0 auto;
-  max-width: 768px;
 }
 
         </style>
@@ -467,29 +365,52 @@ custom-element-demo {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.19/webcomponents-lite.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
-    <body class="demo-page">
-        <article>
-            <h1 id="frame-example">Frame Example</h1>
+    <body class="demo">
+        <main class="demo-layout">
+            <h1 id="frame-button">Frame Button</h1>
 <p>This is an example demo of a button to show how framejs works.
 <a href="https://emolr.github.io/frame-example/">Demo</a></p>
-<h2 id="installation">Installation</h2>
-<p><em>Just serves as example, it’s not actually on npm</em></p>
-<pre><code class="lang-sh">$ npm install frame-example --save
-</code></pre>
-<h3 id="use-bundled-es6">Use bundled es6</h3>
-<pre><code class="lang-html">&lt;script src=&quot;node_modules/frame-example/frame-button.bundle.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-<h3 id="use-vanilla-es6">Use vanilla es6</h3>
-<pre><code class="lang-html">&lt;script type=&quot;module&quot; src=&quot;node_modules/frame-example/frame-button.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-<h3 id="use-with-module-bundling-eg-webpack-and-angular-cli">Use with module bundling eg. webpack and angular cli</h3>
-<p><em>Make sure this code runs before usage</em></p>
-<pre><code class="lang-javascript">  @import &#39;frame-example&#39;;
-</code></pre>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Install</code></td>
+<td>npm install @framejs/frame-button</td>
+</tr>
+<tr>
+<td><code>Npm</code></td>
+<td><a href="https://www.npmjs.com/package/@framejs/frame-button">@framejs/frame-button</a></td>
+</tr>
+<tr>
+<td><code>Source</code></td>
+<td><a href="https://www.npmjs.com/package/@framejs/frame-button">Github</a></td>
+</tr>
+<tr>
+<td><code>ES6</code></td>
+<td><a href="https://www.npmjs.com/package/@framejs/frame-button">unpkg.com</a></td>
+</tr>
+<tr>
+<td><code>Bundle</code></td>
+<td><a href="https://www.npmjs.com/package/@framejs/frame-button">unpkg.com</a></td>
+</tr>
+<tr>
+<td><code>UMD</code></td>
+<td><a href="https://www.npmjs.com/package/@framejs/frame-button">unpkg.com</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
 <h2 id="usage">Usage</h2>
+<p>Buttons are used as triggers for actions. They are used in forms, toolbars, dialog footers and as stand-alone action triggers.
+Button also exports a button-group component to make it easy to display multiple buttons together.</p>
 
             
-<custom-element-demo height="100px">
+<custom-element-demo height="90px">
   <template>
     <script src="frame-button.bundle.js"></script>
     <frame-button onclick="alert('Button clicked')">Button</frame-button>
@@ -502,6 +423,48 @@ custom-element-demo {
 </code>
             </pre>
             
+<h2 id="props">Props</h2>
+<p><strong>theme</strong> : <code>string</code> = “default”</p>
+<p>The base theme</p>
+<hr>
+<h2 id="custom-properties">Custom Properties</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--button-color</code></td>
+<td>The default font color</td>
+<td style="text-align:right"><code>#2a2a2a</code></td>
+</tr>
+<tr>
+<td><code>--button-bg</code></td>
+<td>The default background color</td>
+<td style="text-align:right"><code>#fff</code></td>
+</tr>
+<tr>
+<td><code>--button-hover-bg</code></td>
+<td>The default background color on hover</td>
+<td style="text-align:right"><code>#f0f0f0</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="how-to-load-script">How to load script</h2>
+<pre><code class="lang-html">&lt;!-- In HTML without native module loading --&gt;
+&lt;script src=&quot;@framejs/frame-button/dist/frame-button.bundle.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- In HTML with native module loading --&gt;
+&lt;script type=&quot;module&quot; src=&quot;@framejs/frame-button/dist/frame-button.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- In JS with module bundler --&gt;
+@import &#39;@framejs/frame-button&#39;
+</code></pre>
 <h2 id="contributing">Contributing</h2>
 <ol>
 <li>Fork it!</li>
@@ -510,17 +473,14 @@ custom-element-demo {
 <li>Push to the branch: <code>git push origin my-new-feature</code></li>
 <li>Submit a pull request :D</li>
 </ol>
-<h2 id="history">History</h2>
-<p>This component only serves as an example component, and is not available on npm.</p>
 <h2 id="credits">Credits</h2>
 <p>All my friends</p>
 <h2 id="license">License</h2>
 <p>MIT Licence</p>
 
-        </article>
+        </main>
         <script>
-          var customElementDemo=function(e){"use strict";const t=document.createElement("template");t.innerHTML="\n    <style>\n        :host {\n            display: block;\n            padding: 16px;\n            box-sizing: border-box;\n\n            background: var(--gray-10, #fafafa);\n            padding: 24px;\n            border-radius: 4px;\n            overflow: auto;\n        }\n    </style>\n",window.ShadyCSS&&window.ShadyCSS.prepareTemplate(t,"custom-element-demo");class s extends HTMLElement{constructor(){super(),this.scripts=["https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.19/webcomponents-lite.js"],this.attachShadow({mode:"open"}),this.shadowRoot.appendChild(t.content.cloneNode(!0)),requestAnimationFrame(()=>{this.template=this.querySelector("template"),this.template?(this.iframe=document.createElement("iframe"),this.iframe.style.height=this.height,this.iframe.style.width="100%",this.iframe.style.border="none",this.iframeHTML=`\n                <head>\n                    <base href="${this.baseHref}">\n                    ${this.scripts.map(e=>`<script src="${e}"><\/script>`).join("")}\n                </head>\n                <body style="margin: 0; padding: 0;">\n                    ${this.template.innerHTML}\n\n                </body>\n            `,this.shadowRoot.appendChild(this.iframe),this.iframe.contentWindow.document.write(this.iframeHTML),this.iframe.contentWindow.document.close()):console.error("Missing <template></template> inside <custom-element-demo></custom-element-demo>")})}set baseHref(e){Boolean(e)?this.setAttribute("base-href",e):this.removeAttribute("base-href")}get baseHref(){return this.hasAttribute("base-href")?this.getAttribute("base-href"):"."}set height(e){Boolean(e)?this.setAttribute("height",e):this.removeAttribute("height")}get height(){return this.hasAttribute("height")?this.getAttribute("height"):"300px"}}return window.customElements.get("custom-element-demo")||window.customElements.define("custom-element-demo",s),e.CustomElementDemo=s,e}({});
-          //# sourceMappingURL=custom-element-demo.bundle.js.map
+          var customElementDemo=function(e){"use strict";const t=document.createElement("template");t.innerHTML="\n    <style>\n        :host {\n            display: block;\n            line-height: 0;\n            box-sizing: border-box;\n            overflow: auto;\n        }\n    </style>\n",window.ShadyCSS&&window.ShadyCSS.prepareTemplate(t,"custom-element-demo");class s extends HTMLElement{constructor(){super(),this.scripts=["https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.19/webcomponents-lite.js"],this.attachShadow({mode:"open"}),this.shadowRoot.appendChild(t.content.cloneNode(!0)),requestAnimationFrame(()=>{this.template=this.querySelector("template"),this.template?(this.iframe=document.createElement("iframe"),this.iframe.style.height=this.height,this.iframe.style.width="100%",this.iframe.style.border="none",this.iframeHTML=`\n                <head>\n                    <base href="${this.baseHref}">\n                    ${this.scripts.map(e=>`<script src="${e}"><\/script>`).join("")}\n                </head>\n                <body style="margin: 0; padding: 24px;">\n                    ${this.template.innerHTML}\n\n                </body>\n            `,this.shadowRoot.appendChild(this.iframe),this.iframe.contentWindow.document.write(this.iframeHTML),this.iframe.contentWindow.document.close()):console.error("Missing <template></template> inside <custom-element-demo></custom-element-demo>")})}set baseHref(e){Boolean(e)?this.setAttribute("base-href",e):this.removeAttribute("base-href")}get baseHref(){return this.hasAttribute("base-href")?this.getAttribute("base-href"):"."}set height(e){Boolean(e)?this.setAttribute("height",e):this.removeAttribute("height")}get height(){return this.hasAttribute("height")?this.getAttribute("height"):"300px"}}return window.customElements.get("custom-element-demo")||window.customElements.define("custom-element-demo",s),e.CustomElementDemo=s,e}({});
         </script>
     </body>
 </html>
