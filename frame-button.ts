@@ -9,7 +9,7 @@ frameButtonTemplate.innerHTML = `
 `;
 
 if ((<any>window).ShadyCSS) {
-    (<any>window).ShadyCSS.prepareTemplate(frameButtonTemplate);
+    (<any>window).ShadyCSS.prepareTemplate(frameButtonTemplate, 'frame-button');
 }
 
 export class FrameButton extends HTMLElement {
