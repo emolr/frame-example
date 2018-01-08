@@ -1,33 +1,34 @@
-# Frame Example
+# Frame Button
 
 This is an example demo of a button to show how framejs works.
 [Demo](https://emolr.github.io/frame-example/)
 
-## Installation
-_Just serves as example, it's not actually on npm_
+<dl>
+  <dt>Install</dt>
+  <dd>npm install @framejs/frame-button</dd>
 
-```sh
-$ npm install frame-example --save
-```
+  <dt>Npm</dt>
+  <dd><a href="https://www.npmjs.com/package/@framejs/frame-button">@framejs/frame-button</a></dd>
 
-### Use bundled es6
-```html
-<script src="node_modules/frame-example/frame-button.bundle.js"></script>
-```
+  <dt>Source</dt>
+  <dd><a href="https://www.github.com/">Github</a></dd>
 
-### Use vanilla es6
-```html
-<script type="module" src="node_modules/frame-example/frame-button.js"></script>
-```
+  <dt>ES6</dt>
+  <dd><a href="https://www.github.com/">unpkg.com</a></dd>
 
-### Use with module bundling eg. webpack and angular cli
-_Make sure this code runs before usage_
+  <dt>Bundle (ES6)</dt>
+  <dd><a href="https://www.github.com/">unpkg.com</a></dd>
 
-```javascript
-  @import 'frame-example';
-```
+  <dt>UMD (ES6)</dt>
+  <dd><a href="https://www.github.com/">unpkg.com</a></dd>
+</dl>
+
+---
 
 ## Usage
+
+Buttons are used as triggers for actions. They are used in forms, toolbars, dialog footers and as stand-alone action triggers.
+Button also exports a button-group component to make it easy to display multiple buttons together.
 
 <!--
 ```
@@ -43,6 +44,18 @@ _Make sure this code runs before usage_
 <frame-button onclick="alert('Button clicked')">Button</frame-button>
 ```
 
+## How to load script
+```html
+<!-- In HTML without native module loading -->
+<script src="@framejs/frame-button/dist/frame-button.bundle.js"></script>
+
+<!-- In HTML with native module loading -->
+<script type="module" src="@framejs/frame-button/dist/frame-button.js"></script>
+
+<!-- In JS with module bundler -->
+@import '@framejs/frame-button'
+```
+
 ## Contributing
 
 1. Fork it!
@@ -51,9 +64,6 @@ _Make sure this code runs before usage_
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-This component only serves as an example component, and is not available on npm.
 
 ## Credits
 
@@ -61,4 +71,4 @@ All my friends
 
 ## License
 
-See LICENCE
+MIT Licence

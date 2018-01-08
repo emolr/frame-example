@@ -2,7 +2,10 @@
   "name": "@framejs/example-component",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/frame-button.module.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "node node_modules/@framejs/cli/bin/frame start -o -i readme.md",
     "build": "node node_modules/@framejs/cli/bin/frame build -i readme.md",
