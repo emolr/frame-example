@@ -2,22 +2,27 @@
   display: inline-block;
   button {
     -webkit-appearance: none;
-    border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 14px;
     font-family: sans-serif;
     min-width: 80px;
     padding: 8px 16px;
-    color: var(--button-color, #2a2a2a);
-    background: var(--button-bg, #fff);
-    transition: box-shadow 0.2s ease-in-out;
-    box-shadow: 0 0px 16px rgba(0, 0, 0, 0);
+    color: var(--button-color,rgb(48, 52, 58));
+    background: var(--button-bg, rgba(9, 30, 66, 0.04));
+    transition: all 0.1s ease-in-out;
+    border: none;
+    
     &:focus {
       outline: none;
-      background: var(--button-hover-bg, #f0f0f0);
+      background: var(--button-hover-bg, rgba(9, 30, 66, 0.07));
     }
     &:hover {
-      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+      background: var(--button-hover-bg, rgba(9, 30, 66, 0.07));
+    }
+
+    &:active {
+      transition: all 0.05s ease-in-out;
+      background: var(--button-active-bg, rgba(74, 134, 238, 0.187));
     }
   }
 }
