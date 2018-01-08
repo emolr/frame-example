@@ -21,7 +21,7 @@ Button also exports a button-group component to make it easy to display multiple
 
 <!--
 ```
-<custom-element-demo height="90px">
+<custom-element-demo height="78px">
   <template>
     <script src="frame-button.bundle.js"></script>
     <next-code-block></next-code-block>
